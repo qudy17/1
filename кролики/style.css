@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap');
+
+body{
+    margin:0;
+    font-family: 'Inter';
+}
+
+/*оформление шапки сайта*/
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    padding: 0 165px;
+}
+.logo{
+    font-family: 'Pacifico';
+    font-size: 45px;
+}
+header a{ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #18191F;
+    text-decoration: none;
+    margin-right: 32px;
+}
+/*оформление первой секции*/
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:673px;
+    padding: 0 50px 0 165px;
+    position: relative;
+}
+.section1::after{
+    content:"";
+    display: inline-block;
+    width: 640px;
+    height:640px;
+    border-radius: 640px;
+    background-color: #00C618;
+    position: absolute;
+    top:13px;
+    right:65px;
+    z-index: -1;
+}
+.text1 h1{
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 98px;
+    color: #18191F;
+    margin:0;
+}
+.text1 p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.text1 a{
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    text-decoration: none;
+    padding: 12px 32px;
+    background-color: #FFAD00;
+    border-radius: 6px;
+}
+.section1 img{
+    width:670px;
+    height:419px;
+}
+/*оформление секции 2*/
+.section2{
+    background-color: #00C618;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding:80px 0;
+}
+.section2>h1{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.cards{
+    display: flex;
+    margin:48px 0;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    width:350px;
+    border-radius: 8px;
+    background-color: white;
+    padding:40px;
+    margin-right: 30px;
+}
+.card img{
+    width:32px;
+    height:32px;
+}
+.card h2{
+    font-weight: 600;
+    font-size: 24px;
+}
+.card p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #18191F;
+}
+.card a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    color: #7608AA;
+}
+.section2>a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color:white;
+    border:1px solid white;
+    padding:12px 20px;
+    border-radius:6px;
+}
+/*оформление статей*/
+.statya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:668px;
+}
+.statya:nth-child(odd){
+    flex-direction: row-reverse;
+}
+.statya img{
+    width:540px;
+    height:540px;
+    margin-right:64px;
+}
+.statya:nth-child(odd) img{
+    margin-left:64px;
+    margin-right:0;
+}
+.statya-text{
+    width:540px;
+}
+.statya-text h3{
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFAD00;
+}
+.statya-text h2{
+    font-weight: 800;
+    font-size: 40px;
+    color: #18191F;
+}
+.statya-text p{
+    font-size: 18px;
+    line-height: 32px;
+    color: #18191F;
+}
+.statya-text a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    color: #7608AA;
+}
